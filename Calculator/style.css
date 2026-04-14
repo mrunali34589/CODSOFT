@@ -1,0 +1,75 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #1e1e1e;
+    font-family: Arial;
+}
+
+.title {
+    text-align: center;
+    color: pink;
+    margin-bottom: 10px;
+}
+
+.calculator {
+    background: #2c2c2c;
+    padding: 20px;
+    border-radius: 10px;
+    width: 260px;
+}
+
+/* 🔥 FIXED DISPLAY COLOR */
+#display {
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: #ffffff;   /* white background */
+    color: #000000;        /* black text */
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* 🔥 BETTER BUTTON COLORS */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    background: #4CAF50;   /* green */
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+/* Operator buttons (optional styling) */
+button:nth-child(4n) {
+    background: #ff9800;   /* orange */
+}
+
+button:nth-child(4n):hover {
+    background: #e68900;
+}
+
+/* Clear button */
+button:first-child {
+    background: #f44336;   /* red */
+}
+
+.zero {
+    grid-column: span 2;
+}
